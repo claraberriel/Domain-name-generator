@@ -11,5 +11,17 @@ window.onload = function() {
   let adj = ["great", "big"];
   let noun = ["jogger", "racoon"];
 
+  for (var i = 0; i < pronoun.length; i++)
+  {
+    for (var i = 0; i < adj.length; i++)
+    {
+        for (var i = 0; i < noun.length; i++)
+        {
+           // let index = Math.floor(Math.random() * i);
+            console.log(pronoun[i]+adj[i]+noun[i]);
+        }
+    }
+  }
+
   console.log("Hello Rigo from the console!");
 };
