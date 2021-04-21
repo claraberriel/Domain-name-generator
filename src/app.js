@@ -10,15 +10,17 @@ window.onload = function() {
   let pronoun = ["the", "our"];
   let adj = ["great", "big"];
   let noun = ["jogger", "racoon"];
+  let domain = [".com", ".uy"];
 
   for (var i = 0; i < pronoun.length; i++)
   {
-    for (var i = 0; i < adj.length; i++)
+    for (var j = 0; j < adj.length; j++)
     {
-        for (var i = 0; i < noun.length; i++)
+        for (var k = 0; k < noun.length; k++)
         {
-           // let index = Math.floor(Math.random() * i);
-            console.log(pronoun[i]+adj[i]+noun[i]);
+            for (var l = 0; l < domain.length; l++){
+                console.log(pronoun[i]+adj[j]+noun[k]+domain[l]);
+            }
         }
     }
   }
